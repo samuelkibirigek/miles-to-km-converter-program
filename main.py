@@ -28,8 +28,7 @@ kilometers.grid(column=2, row=1)
 
 def convert():
     converted_unit = round(int(the_input.get()) * 1.609, 2)
-    kms_label = Label(text=f"{converted_unit}", font=font_type)
-    kms_label.grid(column=1, row=1)
+    km_label.config(text=f"{converted_unit}")
 
 
 button = Button(text="Calculate", command=convert, font=font_type)
